@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Paradise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=50&h=50" alt="Logo" class="logo-img">
+            <span>Pizza Paradise</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <div class="cart-icon" onclick="toggleCart()">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>The Best Pizza in Town</h1>
+            <p>Made with love, served with passion</p>
+            <button class="cta-button">Order Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Pizza">
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item" data-id="pizza1">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Margherita">
+                <h3>Margherita</h3>
+                <p>Fresh tomatoes, mozzarella, basil</p>
+                <span class="price">12.99</span>
+                <button class="order-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="pizza2">
+                <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65" alt="Pepperoni">
+                <h3>Pepperoni</h3>
+                <p>Pepperoni, cheese, tomato sauce</p>
+                <span class="price">14.99</span>
+                <button class="order-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="pizza3">
+                <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5" alt="Vegetarian">
+                <h3>Vegetarian</h3>
+                <p>Mixed vegetables, cheese, herbs</p>
+                <span class="price">13.99</span>
+                <button class="order-button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Since 1980, we've been crafting the perfect pizza using traditional Italian recipes and the finest ingredients.</p>
+                <div class="features">
+                    <div class="feature">
+                        <span class="icon">🌟</span>
+                        <h3>Quality Ingredients</h3>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">👨‍🍳</span>
+                        <h3>Expert Chefs</h3>
+                    </div>
+                    <div class="feature">
+                        <span class="icon">🚚</span>
+                        <h3>Fast Delivery</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1542834369-f10ebf06d3e0" alt="Our Kitchen">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📍</span>
+                    <p>123 Pizza Street, Food City</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">📧</span>
+                    <p>info@pizzaparadise.com</p>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 11:00 - 22:00</p>
+                <p>Sat - Sun: 12:00 - 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pizza Paradise. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
